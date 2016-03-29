@@ -1,8 +1,22 @@
 #include <stdio.h>
+#include <math.h>
+float r1;
+float r2;
+float r3;
+float valor_resistencia;
 
-int r1;
-int r2;
-int r3;
+/*Calculo de las resistencias ingresadas*/
+int f1(float x, float y, float z)
+{
+	valor_resistencia = (r1*10+r2*100+r3*1000);
+	
+	valor_resistencia = (r1*10+r2)*pow(10,r3);
+	printf("El valor de la resistencia ingresada es %f", valor_resistencia);
+		
+	return valor_resistencia;
+}
+
+
 
 int main()
 {
@@ -14,18 +28,19 @@ int main()
 
 
 	/*Consultar al usuario, las resistencias a ingresar*/
-	printf("Ingrese la primera resistencia:\n");
-	scanf("%d", &r1);
+	printf("Ingrese el primer color:");
+	scanf("%f", &r1);
 	
-	printf("Ingrese la segunda resistencia:");
-	scanf("%d", &r2);
+	printf("Ingrese el segundo color:");
+	scanf("%f", &r2);
 	
-	printf("Ingrese la tercera resistencia:");
-	scanf("%d", &r3);
-		
-	/*Calculo de las resistencias ingresadas*/
+	printf("Ingrese el tercer color:");
+	scanf("%f", &r3);
+	
+	
 	/*Escribir por pantalla el valor*/
-	
+	f1(r1, r2, r3);
+		
 	return 0;
 	
 }
