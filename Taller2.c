@@ -3,20 +3,27 @@
 float r1;
 float r2;
 float r3;
+
+float v;
+
 float valor_resistencia;
 
 /*Calculo de las resistencias ingresadas*/
-int f1(float x, float y, float z)
+void f1(float x, float y, float z)
 {
 	valor_resistencia = (r1*10+r2*100+r3*1000);
 	
 	valor_resistencia = (r1*10+r2)*pow(10,r3);
 	printf("El valor de la resistencia ingresada es %f", valor_resistencia);
 		
-	return valor_resistencia;
+
 }
 
-
+void f2(float x)
+{
+	int oro = 0.05;
+	int plata = 0.1;
+}
 
 int main()
 {
@@ -36,6 +43,9 @@ int main()
 	
 	printf("Ingrese el tercer color:");
 	scanf("%f", &r3);
+	
+	printf("Ingrese 1 para oro y 2 para plata");
+	scanf("%d", &v);
 	
 	
 	/*Escribir por pantalla el valor*/
