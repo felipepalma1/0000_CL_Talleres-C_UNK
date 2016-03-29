@@ -21,8 +21,16 @@ void f1(float x, float y, float z)
 
 void f2(float x)
 {
-	int oro = 0.05;
-	int plata = 0.1;
+	float oro = 0.05;
+	float plata = 0.1;
+	
+	if(x == 1){
+		
+	}
+	
+	else{
+		
+	}
 }
 
 int main()
